@@ -1,6 +1,6 @@
-# 🔐 Password Manager Web App
+# 🔐 Password Generator
 
-This is a secure and user-friendly **Password Manager** web app built with Flask. It allows users to register, log in, generate strong passwords, and store them securely for easy access.
+This is a secure and user-friendly **Password Generator** web app built with Flask. It allows users to register, log in, generate strong passwords, and store them securely for easy access.
 
 ## 🚀 Features
 
