@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Generate New Password</h2>
+
+<form method="POST" class="generate-form">
+    <label for="title">Password Title (e.g., Gmail, Netflix):</label>
+    <input type="text" name="title" required>
+
+    <label for="length">Password Length (8-64):</label>
+    <input type="number" name="length" min="8" max="64" value="16" required>
+
+    <div class="checkboxes">
+        <label><input type="checkbox" name="lowercase" checked> Include lowercase</label>
+        <label><input type="checkbox" name="uppercase" checked> Include uppercase</label>
+        <label><input type="checkbox" name="digits" checked> Include digits</label>
+        <label><input type="checkbox" name="symbols" checked> Include symbols</label>
+        <label><input type="checkbox" name="exclude_similar"> Exclude similar characters (l, 1, I, O, 0)</label>
+        <label><input type="checkbox" name="exclude_ambiguous"> Exclude ambiguous characters ({}[] etc)</label>
+    </div>
+
+    <button type="submit">Generate & Save</button>
+</form>
+{% endblock %}

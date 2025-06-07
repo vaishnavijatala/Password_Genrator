@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome to your Dashboard</h2>
+
+{% if passwords %}
+    <table class="password-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in passwords %}
+            <tr>
+                <td>{{ p.title }}</td>
+                <td>
+                    <input type="password" value="{{ p.password }}" readonly>
+                    <button onclick="this.previousElementSibling.type='text'">👁️</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No passwords saved yet. <a href="{{ url_for('generate') }}">Generate one!</a></p>
+{% endif %}
+{% endblock %}

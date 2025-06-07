@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: #2d3e50;
+    padding: 15px;
+}
+
+nav h2 {
+    display: inline;
+    color: white;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.auth-form, .generate-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form input, .generate-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.auth-form button, .generate-form button {
+    background-color: #2d89ef;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.auth-form button:hover, .generate-form button:hover {
+    background-color: #1b5fc6;
+}
+
+.checkboxes label {
+    display: block;
+    margin: 5px 0;
+}
+
+.flash {
+    background: #ffefc1;
+    padding: 10px;
+    border: 1px solid #f7d276;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.password-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.password-table th, .password-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.password-table button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
