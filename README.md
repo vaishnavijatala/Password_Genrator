@@ -37,6 +37,8 @@ python app.py
 
 📁 Project Structure
 📦 Password_Genrator/
+
+
 ├── 📄 app.py                  # Main Flask app
 ├── 📄 config.py               # Configuration settings
 ├── 📄 models.py               # SQLAlchemy models for User and SavedPassword
